@@ -117,7 +117,7 @@ header .headContainer .exit-btn {
       -ms-flex: right;
           flex: right;
   margin-left: 1em;
-  padding: .2em .5em;
+  padding: 1.2em .5em;
   border: 1px solid #F7797D;
   border-radius: 10px;
   position: absolute;
@@ -179,7 +179,8 @@ header .headContainer .exit-btn {
 }
 
 .content {
-  padding: 3em 1em;
+  margin: 73px 0 0 0;
+  padding: 2.5em 0;
   text-align: center;
   position: relative;
 }
@@ -189,6 +190,8 @@ header .headContainer .exit-btn {
     max-width: 750px;
     position: relative;
     left: calc(50vw - 510px);
+    text-align: left;
+    margin-top: 55px;
   }
 }
 
@@ -203,10 +206,24 @@ h1, h2, h3 {
   }
 }
 
+h1 {
+  display: inline;
+  padding: 0;
+}
+
 h3 {
   font-weight: normal;
   font-size: 1.4em;
   line-height: 1.1em;
+  display: inline;
+  padding-right: .5em;
+}
+
+.container {
+  width: 100%;
+  text-align: left;
+  margin-top: 2em;
+  position: relative;
 }
 
 .hero {
@@ -381,7 +398,10 @@ h3 {
 }
 
 .products {
-  width: 100%;
+  width: calc(100% - 2em);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 1em;
 }
 
 .products .Digital {
@@ -1349,7 +1369,7 @@ h3 {
 .back2Proofs {
   position: absolute;
   left: 0.5em;
-  top: 3.5em;
+  top: 0;
   color: white;
   background-color: none;
   padding: .4em;
@@ -1583,10 +1603,6 @@ h3 {
     max-width: 750px;
     position: relative;
   }
-}
-
-.header1 {
-  padding-left: 1em;
 }
 
 footer {
