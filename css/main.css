@@ -1362,9 +1362,21 @@ h3 {
 }
 
 .proofPage {
-  max-width: 1000px;
   position: relative;
   min-height: calc(100vh - 207px);
+  margin: 4.5em auto 0 auto;
+  padding: 1em;
+  text-align: center;
+}
+
+.proofPage h3 {
+  display: inline;
+  padding: 0 .5em 0 0;
+}
+
+.proofPage h1 {
+  display: inline;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1376,6 +1388,10 @@ h3 {
 @media screen and (min-width: 1024px) {
   .proofPage {
     margin: 4em auto;
+    max-width: 1000px;
+    position: relative;
+    min-height: calc(100vh - 207px);
+    text-align: left;
   }
 }
 
@@ -1408,13 +1424,12 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: left;
 }
 
 .AllProofs .proofs {
   position: relative;
-  margin: .5em;
-  padding: .25em;
+  margin: 1em auto;
+  padding: .5em;
   text-align: center;
   background-color: white;
   border-radius: 5px;
@@ -1483,6 +1498,13 @@ h3 {
   opacity: 1 !important;
   -webkit-transition: opacity ease-in-out 250ms;
   transition: opacity ease-in-out 250ms;
+}
+
+@media screen and (min-width: 1024px) {
+  .AllProofs .proofs {
+    margin: .5em;
+    padding: .25em;
+  }
 }
 
 .digSelect {

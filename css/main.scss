@@ -1303,9 +1303,14 @@ h3 {
 }
 
 .proofPage {
-    max-width: 1000px;
     position: relative;
     min-height: calc(100vh - 207px);
+    margin: 4.5em auto 0 auto;
+    padding: 1em;
+    text-align: center;
+
+    h3 {display: inline; padding: 0 .5em 0 0;}
+    h1 {display: inline; padding: 0;}
 
     @media screen and (min-width: 768px) {
         width: auto;
@@ -1313,6 +1318,10 @@ h3 {
 
     @media screen and (min-width: 1024px) {
         margin: 4em auto;
+        max-width: 1000px;
+        position: relative;
+        min-height: calc(100vh - 207px);
+        text-align: left;
     }
     
 }
@@ -1339,12 +1348,13 @@ h3 {
     flex-wrap: wrap;
     width: 100%;
     display: flex;
-    text-align: left;
+
+    
 
     .proofs {
         position: relative;
-        margin: .5em;
-        padding: .25em;
+        margin: 1em auto;
+        padding: .5em;
         text-align: center;
         background-color: white;
         border-radius: 5px;
@@ -1405,7 +1415,14 @@ h3 {
                 transition: opacity ease-in-out 250ms;
             }
         }
+
+        @media screen and (min-width: 1024px) {
+            margin: .5em;
+            padding: .25em;
+        }
     }
+
+   
 
 }
 
