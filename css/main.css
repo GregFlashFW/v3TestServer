@@ -1730,6 +1730,23 @@ footer .text-center {
 .customizeH2 {
   font-size: 1.5em;
   font-weight: 600;
+  display: inline-block;
+}
+
+.custom-product-price {
+  width: 50%;
+  color: rgba(255, 255, 255, 0.781);
+  font-size: 1.2em;
+  float: right;
+  line-height: 2em;
+}
+
+.QTY {
+  width: 50%;
+  color: white;
+  font-size: 1.2em;
+  padding-left: .5em;
+  line-height: 2em;
 }
 
 .customizeLine {
@@ -1767,7 +1784,6 @@ footer .text-center {
   font-size: 1.3em;
   color: white;
   font-weight: 600;
-  display: inline-block;
   padding: .5em 0 .5em .5em;
   text-align: right;
   float: right;
@@ -1779,7 +1795,7 @@ footer .text-center {
   color: white;
   padding-left: 1em;
   width: 65%;
-  line-height: 2em;
+  line-height: 3em;
 }
 
 @media screen and (max-width: 320px) {
@@ -1796,7 +1812,7 @@ footer .text-center {
   width: 30px;
   height: 30px;
   padding: 8px;
-  margin-right: .2em;
+  margin-right: .5em;
   border-radius: 50%;
   border: 2px solid #fffaff;
   background: #3292E1;
@@ -1816,12 +1832,11 @@ footer .text-center {
 }
 
 .custom-price {
-  display: inline-block;
   color: white;
   width: 30%;
   text-align: right;
   float: right;
-  line-height: 2em;
+  line-height: 3em;
 }
 
 .custom-price .btn {
@@ -1905,29 +1920,54 @@ footer .text-center {
   color: white;
   background: #33333350;
   border: 1px solid #575757;
-  display: inline-block;
   text-align: right;
   float: right;
   margin-top: .25em;
+  margin-left: .5em;
+}
+
+.photo-select {
+  width: 300px;
+  height: 300px;
+  background: #EBDFC8;
+  float: left;
+  margin-left: calc(50vw - 400px);
 }
 
 @media screen and (min-width: 768px) {
+  .customize {
+    max-width: 600px;
+    left: 200px;
+  }
+  .customize .btn {
+    margin: 0 0 0 auto;
+    width: 30%;
+    font-size: 1em;
+  }
   .custom-head {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   .custom-group {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .custom-group-inline {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .custom-product {
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding-left: 3em;
+    line-height: 2.5em;
+    max-width: 330px;
   }
   .custom-price {
     padding-right: .5em;
-    font-size: 1.4em;
+    font-size: 1.2em;
+    max-width: 150px;
+    line-height: 2.5em;
+  }
+  .custom-price .btn {
+    font-size: 1em;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
