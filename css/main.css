@@ -39,7 +39,7 @@ header .headContainer .logo {
 header .headContainer .menu {
   width: 30px;
   padding: 20px 0;
-  color: white;
+  color: #fffaff;
 }
 
 header .headContainer .menu .menuL1, header .headContainer .menu .menuL2, header .headContainer .menu .menuL3 {
@@ -135,7 +135,7 @@ header .headContainer .exit-btn {
 .floatDig h2 {
   color: #F7797D;
   font-size: 1.4em;
-  background-color: white;
+  background-color: #fffaff;
   border-radius: 10px;
   line-height: 1em;
   padding: .2em;
@@ -153,7 +153,7 @@ header .headContainer .exit-btn {
   text-decoration: none;
   border-radius: 5px;
   width: 90%;
-  color: white;
+  color: #fffaff;
   font-size: .8em;
   font-weight: 600;
   margin: auto;
@@ -196,7 +196,7 @@ header .headContainer .exit-btn {
 }
 
 h1, h2, h3 {
-  color: white;
+  color: #fffaff;
   line-height: .5em;
 }
 
@@ -244,7 +244,7 @@ h3 {
 }
 
 .hero .proof h1, .hero .proof h2 {
-  color: black;
+  color: #050401;
   line-height: .3em;
   text-align: center;
 }
@@ -305,7 +305,7 @@ h3 {
 .hero .Ad h2 {
   color: #F7797D;
   font-size: 1em;
-  background-color: white;
+  background-color: #fffaff;
   border-radius: 10px;
   line-height: 1em;
   padding: .1em;
@@ -322,7 +322,7 @@ h3 {
   border: 1px solid #4FB957;
   border-radius: 5px;
   width: 90%;
-  color: white;
+  color: #fffaff;
   font-size: .8em;
   font-weight: 600;
   margin: auto;
@@ -364,7 +364,7 @@ h3 {
 .hero .moreProofs {
   width: calc(80% - 1em);
   height: 250px;
-  background: white;
+  background: #fffaff;
   overflow: scroll;
   overflow-x: hidden;
   border: 1px solid #909090;
@@ -578,6 +578,12 @@ h3 {
   width: 100%;
 }
 
+.products .packages .card .packageInfo .Description2 a {
+  text-decoration: none;
+  width: 90%;
+  display: block;
+}
+
 @media screen and (min-width: 1024px) {
   .products .packages {
     display: -webkit-box;
@@ -684,6 +690,7 @@ h3 {
   margin: 2em 0;
   background: #EBDFC8;
   border-radius: 10px;
+  text-align: center;
 }
 
 .products .posters .title {
@@ -737,7 +744,7 @@ h3 {
 
 .products .individuals .Description1 .titleInfo8x10 {
   width: 225px;
-  background: white;
+  background: #fffaff;
   height: 50px;
   margin-left: 1em;
   position: relative;
@@ -752,7 +759,7 @@ h3 {
   height: 20px;
   left: 10px;
   top: 0px;
-  background: black;
+  background: #050401;
   content: '';
 }
 
@@ -889,7 +896,7 @@ h3 {
 
 .products .plaques1 .Description1 .titleInfo8x10, .products .plaques2 .Description1 .titleInfo8x10 {
   width: 225px;
-  background: white;
+  background: #fffaff;
   height: 50px;
   margin-left: 1em;
   position: relative;
@@ -904,7 +911,7 @@ h3 {
   height: 20px;
   left: 10px;
   top: 0px;
-  background: black;
+  background: #050401;
   content: '';
 }
 
@@ -1026,7 +1033,7 @@ h3 {
   border-radius: 10px 10px 0 0;
   font-size: 1.2em;
   font-weight: 800;
-  color: white;
+  color: #fffaff;
   text-transform: uppercase;
   padding: .3em 0;
   text-align: center;
@@ -1051,7 +1058,7 @@ h3 {
   top: 0;
   left: 0;
   text-align: center;
-  color: black;
+  color: #050401;
   background: rgba(241, 233, 218, 0.9);
   font-weight: 600;
   opacity: 0;
@@ -1061,17 +1068,18 @@ h3 {
           box-sizing: border-box;
   border-bottom: 2px solid #3292E1;
   overflow: hidden;
-  z-index: 10;
+  z-index: 9;
 }
 
 .title2 .d1Overlay h3 {
   width: 100%;
+  display: block;
   height: 25px;
   font-weight: 800;
-  background-color: #e3812540;
+  background-color: #ffffff70;
   padding: .5em 0;
   margin: 0;
-  color: black;
+  color: #050401;
   text-align: center;
   border-bottom: 3px solid #e38125;
 }
@@ -1130,7 +1138,7 @@ h3 {
   border-radius: 50%;
   border: 2px solid white;
   background: #3292E1;
-  color: white;
+  color: #fffaff;
   right: 0;
   bottom: 0;
   -webkit-transform: scale(0.8);
@@ -1189,7 +1197,7 @@ h3 {
   top: 0;
   left: 0;
   text-align: center;
-  color: black;
+  color: #050401;
   background: rgba(241, 233, 218, 0.9);
   font-weight: 600;
   opacity: 0;
@@ -1199,7 +1207,7 @@ h3 {
           box-sizing: border-box;
   border-bottom: 2px solid #3292E1;
   overflow: hidden;
-  z-index: 10;
+  z-index: 9;
 }
 
 .Description1 .d1Overlay p {
@@ -1208,13 +1216,14 @@ h3 {
 }
 
 .Description1 .d1Overlay h3 {
+  display: block;
   width: 100%;
   height: 25px;
   font-weight: 800;
   background-color: #ffffff70;
   padding: .5em 0;
   margin: 0;
-  color: black;
+  color: #050401;
   text-align: center;
   border-bottom: 3px solid #e38125;
 }
@@ -1272,7 +1281,7 @@ h3 {
   border-radius: 50%;
   border: 2px solid white;
   background: #3292E1;
-  color: white;
+  color: #fffaff;
   right: 0;
   bottom: 0;
   -webkit-transform: scale(0.8);
@@ -1308,7 +1317,7 @@ h3 {
 
 .Description2H p {
   font-size: 1.4em;
-  color: black;
+  color: #050401;
   font-weight: 600;
   margin: .2em;
 }
@@ -1317,7 +1326,7 @@ h3 {
   background: -webkit-gradient(linear, left top, left bottom, from(#5DAEF1), to(#3292E1));
   background: linear-gradient(#5DAEF1, #3292E1);
   border: 1px solid #3292E1;
-  color: white;
+  color: #fffaff;
   font-size: 1.1em;
   font-weight: 800;
   text-transform: uppercase;
@@ -1354,7 +1363,7 @@ h3 {
 .cart {
   position: absolute;
   left: calc(50vw + 260px);
-  color: white;
+  color: #fffaff;
   background-color: #3292E1;
   padding: .5em 0em;
   width: calc(200px + 1em);
@@ -1370,13 +1379,13 @@ h3 {
   position: absolute;
   left: 0.5em;
   top: 0;
-  color: white;
+  color: #fffaff;
   background-color: none;
   padding: .4em;
   text-align: center;
   border-radius: 5px;
   border: 1px solid white;
-  color: white;
+  color: #fffaff;
   text-decoration: none;
   font-weight: 600;
 }
@@ -1451,7 +1460,7 @@ h3 {
   margin: 1em auto;
   padding: .5em;
   text-align: center;
-  background-color: white;
+  background-color: #fffaff;
   border-radius: 5px;
   overflow: hidden;
   -webkit-transition: 250ms ease-in-out;
@@ -1473,7 +1482,7 @@ h3 {
 .AllProofs .proofs a {
   text-decoration: none;
   opacity: 1 !important;
-  color: white;
+  color: #fffaff;
 }
 
 .AllProofs .proofs .selectProof {
@@ -1481,7 +1490,7 @@ h3 {
   display: block;
   position: absolute;
   text-align: center;
-  color: white;
+  color: #fffaff;
   margin: auto;
   width: 95%;
   background: -webkit-gradient(linear, left top, left bottom, from(#5DAEF1), to(#3292E1));
@@ -1511,7 +1520,7 @@ h3 {
 }
 
 .AllProofs .proofs:hover .poseName {
-  color: white;
+  color: #fffaff;
 }
 
 .AllProofs .proofs:hover .selectProof {
@@ -1546,7 +1555,7 @@ h3 {
   margin: .5em;
   padding: .25em;
   text-align: center;
-  background-color: white;
+  background-color: #fffaff;
   border-radius: 5px;
   overflow: hidden;
   -webkit-transition: 250ms ease-in-out;
@@ -1569,7 +1578,7 @@ h3 {
 .digSelect .proofs a {
   text-decoration: none;
   opacity: 1 !important;
-  color: white;
+  color: #fffaff;
 }
 
 .digSelect .proofs .selectProof {
@@ -1577,7 +1586,7 @@ h3 {
   display: block;
   position: absolute;
   text-align: center;
-  color: white;
+  color: #fffaff;
   margin: auto;
   width: 95%;
   background: -webkit-gradient(linear, left top, left bottom, from(#5DAEF1), to(#3292E1));
@@ -1606,8 +1615,8 @@ h3 {
 }
 
 footer {
-  background-color: black;
-  color: white;
+  background-color: #050401;
+  color: #fffaff;
   padding: 10px 0 20px 0;
   width: 100%;
   display: block;
@@ -1679,6 +1688,246 @@ footer .text-center {
 @media screen and (min-width: 768px) {
   .hide-mobile {
     display: block;
+  }
+}
+
+.customize {
+  display: block;
+  width: 100%;
+  position: relative;
+  min-height: calc(100vh - 134px);
+  margin-top: 78px;
+  padding: 0 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.customize h1, .customize h3 {
+  line-height: 1em;
+}
+
+.customize .btn {
+  width: 80%;
+  text-align: center;
+}
+
+.customize .btn::before {
+  content: 'Add to Cart';
+}
+
+.customize .btn::after {
+  content: '';
+}
+
+@media screen and (min-width: 1024px) {
+  .customize {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 76px;
+  }
+}
+
+.customizeH2 {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.customizeLine {
+  height: 3px;
+  background-color: #3292E1;
+  width: 100%;
+}
+
+.custom-head {
+  color: #3292E1;
+  font-size: 1.3em;
+  font-weight: 600;
+  display: block;
+  padding: .25em 0;
+}
+
+.custom-group {
+  font-size: 1.3em;
+  color: white;
+  font-weight: 600;
+  display: block;
+  padding: .5em 0 .5em .5em;
+}
+
+.custom-group-inline {
+  font-size: 1.3em;
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  padding: .5em 0 .5em .5em;
+  width: 60%;
+}
+
+.subtotal {
+  font-size: 1.3em;
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  padding: .5em 0 .5em .5em;
+  text-align: right;
+  float: right;
+  width: 30%;
+}
+
+.custom-product {
+  display: inline-block;
+  color: white;
+  padding-left: 1em;
+  width: 65%;
+  line-height: 2em;
+}
+
+@media screen and (max-width: 320px) {
+  .custom-product {
+    width: 60%;
+  }
+}
+
+.custom-product .fas {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  padding: 8px;
+  margin-right: .2em;
+  border-radius: 50%;
+  border: 2px solid #fffaff;
+  background: #3292E1;
+  color: #fffaff;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.custom-product .fa-info {
+  font-size: 12px;
+}
+
+.custom-product:hover .fa-info {
+  background: #7e7e7e;
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+.custom-price {
+  display: inline-block;
+  color: white;
+  width: 30%;
+  text-align: right;
+  float: right;
+  line-height: 2em;
+}
+
+.custom-price .btn {
+  padding: .2em .5em;
+}
+
+.custom-price .btn::before {
+  content: '';
+}
+
+/* Customize the label (the container) */
+.custom-radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: .5em;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+}
+
+.custom-qty {
+  width: 50px;
+  height: 35px;
+  font-size: 1.2em;
+  color: white;
+  background: #33333350;
+  border: 1px solid #575757;
+  display: inline-block;
+  text-align: right;
+  float: right;
+  margin-top: .25em;
+}
+
+@media screen and (min-width: 768px) {
+  .custom-head {
+    font-size: 1.8em;
+  }
+  .custom-group {
+    font-size: 1.6em;
+  }
+  .custom-group-inline {
+    font-size: 1.6em;
+  }
+  .custom-product {
+    font-size: 1.4em;
+    padding-left: 3em;
+  }
+  .custom-price {
+    padding-right: .5em;
+    font-size: 1.4em;
   }
 }
 /*# sourceMappingURL=main.css.map */

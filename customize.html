@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Step 2: Select Poses - Flash Photography</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script type='text/javascript'>    
+    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1kr6uzRIjehvVBpda2S9_Qpj_aj3lEuTVuRK5ceHat7M/edit?usp=sharing';
+
+    function init() {
+        Tabletop.init( { key: publicSpreadsheetUrl,
+                        callback: showInfo,
+                        simpleSheet: true } )
+    }
+
+    window.addEventListener('DOMContentLoaded', init)
+    </script>
+
+
+</head>
+<body>
+    <header>
+        <div class="headContainer">
+            <img src="images/logo.svg" alt="flashphotography logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <div class="menu" id="menu">
+                        <div class="menuL1"></div>
+                        <div class="menuL2"></div>
+                        <div class="menuL3"></div>
+
+                    </div>
+                </a>
+                
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="images/exit.svg" alt="exit menu"></li>
+                    <li><a href="http://www.flashphotography.com">home</a></li>
+                    <li><a href="http://www.flashphotography.com/services">our services</a></li>
+                    <li><a href="http://www.flashphotography.com/educators">for educators</a></li>
+                    <li><a href="http://www.flashphotography.com/about">about us</a></li>
+                    <li><a href="http://www.flashphotography.com/contact">contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="customize">
+            <h3 class="step">Step 2:</h3>
+            <h1 id="name" class="header1">Customize Your Package</h1>
+
+            <h2 class="customizeH2">Package A</h2>
+
+            <div class="customizeLine"></div>
+
+            <span class="custom-head">Product Customizations</span>
+
+            <span class="custom-group">Paper Style</span>
+
+            <span class="custom-product"><div class="fas fa-info"></div>Premium Pearlized Paper</span>
+            <div class="custom-price">
+                $168.65
+                <label class="custom-radio">
+                    <input type="radio" name="paper" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <span class="custom-product"><div class="fas fa-info"></div>Add Lamination</span>
+            <div class="custom-price">
+                $119.95
+                <label class="custom-radio">
+                    <input type="radio" name="paper">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <span class="custom-product"><div class="fas fa-info"></div>Standard Matte Finish</span>
+            <div class="custom-price">
+                $99.95
+                <label class="custom-radio">
+                    <input type="radio" name="paper">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+
+            <div class="customizeLine"></div>
+
+            <span class="custom-group-inline">Quantity of Packages</span>
+
+            <select name="qty" id="qty" class="custom-qty">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <div class="customizeLine"></div>
+
+            <span class="custom-group">Add Digital File</span>
+
+            <div class="customizeLine"></div>
+
+            <span class="custom-group">Display Options</span>
+
+            <span class="custom-product">Photo Frame</span>
+            <div class="custom-price">
+                <a class="btn">Choose Frame</a>
+            </div>
+
+
+            <div class="customizeLine"></div
+                >
+            <span class="custom-group">Add-Ons</span>
+
+            <span class="custom-product">Tassel Frame</span>
+            <div class="custom-price">
+                $44.95
+                <label class="custom-radio"><input type="checkbox" name="addon">
+                    <span class="checkmark"></span>
+            
+                </label>
+            </div>
+
+            <span class="custom-product">8 Additional Wallets</span>
+            <div class="custom-price">
+                $19.95
+                <label class="custom-radio"><input type="checkbox" name="addon">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+            <div class="customizeLine"></div>
+
+            <span class="custom-group-inline">Subtotal</span><span class="subtotal">$189.95</span>
+
+            <div class="btn"></div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+            <a class="nav-link" href="http://www.flashphotography.com/services">Our Services</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="http://www.flashphotography.com/educators">For Educators</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="http://www.flashphotography.com/about">About Us</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="http://www.flashphotography.com/contact">Contact Us</a>
+            </li>
+        </ul>
+        <div class="footer__copyright-notice text-center">
+            Copyright &copy; 2019 Flash Photography Inc. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

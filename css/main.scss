@@ -2,6 +2,8 @@
 
 $clr-main: #e38125;
 $clr-secondary: #3292E1;
+$clr-white: #fffaff;
+$clr-black: #050401;
 $tbg-digital: linear-gradient(90deg, #BC4E9C, #F80759);
 $tbg-monster: linear-gradient(90deg, #CB2D3E, #EF473A);
 $cardbg: #EBDFC8;
@@ -36,7 +38,7 @@ header {
         .menu {
             width: 30px;
             padding:20px 0;
-            color: white;
+            color: $clr-white;
 
             .menuL1, .menuL2, .menuL3 {
                 background: rgba(255,255,255,0.7);
@@ -131,7 +133,7 @@ header {
     h2 {
         color: #F7797D;
         font-size: 1.4em;
-        background-color: white;
+        background-color: $clr-white;
         border-radius: 10px;
         line-height: 1em;
         padding: .2em;
@@ -149,7 +151,7 @@ header {
         text-decoration: none;
         border-radius: 5px;
         width: 90%;
-        color: white;
+        color: $clr-white;
         font-size: .8em;
         font-weight: 600;
         margin: auto;
@@ -189,7 +191,7 @@ header {
 }
 
 h1, h2, h3 {
-    color: white;
+    color: $clr-white;
     line-height: .5em;
 
     @media screen and (min-width: 1024px){
@@ -229,7 +231,7 @@ h3 {
         flex: left;
 
         h1, h2 {
-            color: black;
+            color:$clr-black;
             line-height: .3em;
             text-align: center;
         }
@@ -283,7 +285,7 @@ h3 {
         h2 {
             color: #F7797D;
             font-size: 1em;
-            background-color: white;
+            background-color: $clr-white;
             border-radius: 10px;
             line-height: 1em;
             padding: .1em;
@@ -300,7 +302,7 @@ h3 {
             border: 1px solid #4FB957;
             border-radius: 5px;
             width: 90%;
-            color: white;
+            color: $clr-white;
             font-size: .8em;
             font-weight: 600;
             margin: auto;
@@ -343,7 +345,7 @@ h3 {
     .moreProofs {
         width: calc(80% - 1em);
         height: 250px;
-        background: white;
+        background: $clr-white;
         overflow: scroll;
         overflow-x: hidden;
         border: 1px solid #909090;
@@ -370,7 +372,7 @@ h3 {
             }
         }
     }
-}   
+}
 
 .products{
     width: calc(100% - 2em);
@@ -541,6 +543,12 @@ h3 {
 
                 .Description2 {
                     width: 100%;
+
+                    a {
+                        text-decoration: none;
+                        width: 90%;
+                        display: block;
+                    }
                 }
             }
             
@@ -644,6 +652,7 @@ h3 {
         margin: 2em 0;
         background: #EBDFC8;
         border-radius: 10px;
+        text-align: center;
 
         .title {
             background: linear-gradient(90deg, #FFA751, #FFE259);
@@ -693,7 +702,7 @@ h3 {
 
             .titleInfo8x10 {
                 width: 225px;
-                background: white;
+                background: $clr-white;
                 height: 50px;
                 margin-left: 1em;
                 position: relative;
@@ -707,7 +716,7 @@ h3 {
                     height: 20px;
                     left: 10px;
                     top: 0px;
-                    background: black;
+                    background:$clr-black;
                     content: '';
                 }
 
@@ -841,7 +850,7 @@ h3 {
 
             .titleInfo8x10 {
                 width: 225px;
-                background: white;
+                background: $clr-white;
                 height: 50px;
                 margin-left: 1em;
                 position: relative;
@@ -855,7 +864,7 @@ h3 {
                     height: 20px;
                     left: 10px;
                     top: 0px;
-                    background: black;
+                    background:$clr-black;
                     content: '';
                 }
 
@@ -975,7 +984,7 @@ h3 {
     border-radius: 10px 10px 0 0;
     font-size: 1.2em;
     font-weight: 800;
-    color: white;
+    color: $clr-white;
     text-transform: uppercase;
     padding: .3em 0;
     text-align: center;
@@ -998,7 +1007,7 @@ h3 {
         top: 0;
         left: 0;
         text-align: center;
-        color: black;
+        color:$clr-black;
         background:rgba(241, 233, 218, 0.9);
         font-weight: 600;
         opacity: 0;
@@ -1006,16 +1015,17 @@ h3 {
         box-sizing: border-box;
         border-bottom: 2px solid $clr-secondary;
         overflow: hidden;
-        z-index: 10;
+        z-index: 9;
 
         h3 {
             width: 100%;
+            display: block;
             height: 25px;
             font-weight: 800;
-            background-color: #e3812540;
+            background-color: #ffffff70;
             padding: .5em 0;
             margin: 0;
-            color: black;
+            color:$clr-black;
             text-align: center;
             border-bottom: 3px solid $clr-main;
         }
@@ -1073,7 +1083,7 @@ h3 {
         border-radius: 50%;
         border: 2px solid white;
         background: $clr-secondary;
-        color: white;
+        color: $clr-white;
         right: 0;
         bottom: 0;
         transform: scale(.8)
@@ -1132,7 +1142,7 @@ h3 {
         top: 0;
         left: 0;
         text-align: center;
-        color: black;
+        color:$clr-black;
         background:rgba(241, 233, 218, 0.9);
         font-weight: 600;
         opacity: 0;
@@ -1140,7 +1150,7 @@ h3 {
         box-sizing: border-box;
         border-bottom: 2px solid $clr-secondary;
         overflow: hidden;
-        z-index: 10;
+        z-index: 9;
 
         p {
             padding: 0 1em;
@@ -1148,13 +1158,14 @@ h3 {
         }
 
         h3 {
+            display: block;
             width: 100%;
             height: 25px;
             font-weight: 800;
             background-color: #ffffff70;
             padding: .5em 0;
             margin: 0;
-            color: black;
+            color:$clr-black;
             text-align: center;
             border-bottom: 3px solid $clr-main;
         }
@@ -1212,7 +1223,7 @@ h3 {
         border-radius: 50%;
         border: 2px solid white;
         background: $clr-secondary;
-        color: white;
+        color: $clr-white;
         right: 0;
         bottom: 0;
         transform: scale(.8)
@@ -1250,7 +1261,7 @@ h3 {
 
     p {
         font-size: 1.4em;
-        color: black;
+        color:$clr-black;
         font-weight: 600;
         margin: .2em;
     }
@@ -1259,7 +1270,7 @@ h3 {
 .btn {
     background: linear-gradient(#5DAEF1,#3292E1);
     border: 1px solid #3292E1;
-    color: white;
+    color: $clr-white;
     font-size: 1.1em;
     font-weight: 800;
     text-transform: uppercase;
@@ -1294,7 +1305,7 @@ h3 {
 .cart {
     position: absolute;
     left: calc(50vw + 260px);
-    color: white;
+    color: $clr-white;
     background-color: $clr-secondary;
     padding: .5em 0em;
     width: calc(200px + 1em);
@@ -1310,13 +1321,13 @@ h3 {
     position: absolute;
     left: 0.5em;
     top: 0;
-    color: white;
+    color: $clr-white;
     background-color: none;
     padding: .4em;
     text-align: center;
     border-radius: 5px;
     border: 1px solid white;
-    color: white;
+    color: $clr-white;
     text-decoration: none;
     font-weight: 600;
 
@@ -1380,7 +1391,7 @@ h3 {
         margin: 1em auto;
         padding: .5em;
         text-align: center;
-        background-color: white;
+        background-color: $clr-white;
         border-radius: 5px;
         overflow: hidden;
         transition: 250ms ease-in-out;
@@ -1399,7 +1410,7 @@ h3 {
         a {
             text-decoration: none;
             opacity: 1 !important;
-            color: white;
+            color: $clr-white;
         }
 
         .selectProof {
@@ -1407,7 +1418,7 @@ h3 {
             display: block;
             position: absolute;
             text-align: center;
-            color: white;
+            color: $clr-white;
             margin: auto;
             width: 95%;
             background: linear-gradient(#5DAEF1,#3292E1);
@@ -1431,7 +1442,7 @@ h3 {
             }
 
             .poseName {
-                color: white;
+                color: $clr-white;
             }
 
             .selectProof {
@@ -1464,7 +1475,7 @@ h3 {
         margin: .5em;
         padding: .25em;
         text-align: center;
-        background-color: white;
+        background-color: $clr-white;
         border-radius: 5px;
         overflow: hidden;
         transition: 250ms ease-in-out;
@@ -1484,7 +1495,7 @@ h3 {
         a {
             text-decoration: none;
             opacity: 1 !important;
-            color: white;
+            color: $clr-white;
         }
 
         .selectProof {
@@ -1492,7 +1503,7 @@ h3 {
             display: block;
             position: absolute;
             text-align: center;
-            color: white;
+            color: $clr-white;
             margin: auto;
             width: 95%;
             background: linear-gradient(#5DAEF1,#3292E1);
@@ -1519,8 +1530,8 @@ h3 {
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color:$clr-black;
+    color: $clr-white;
     padding: 10px 0 20px 0;
     width: 100%;
     display: block;
@@ -1588,5 +1599,245 @@ footer {
 
     @media screen and (min-width: 768px){
         display: block;
+    }
+}
+
+// CUSTOMIZE PACKAGE PAGE
+
+.customize {
+    display: block;
+    width: 100%;
+    position: relative;
+    min-height: calc(100vh - 134px);
+    margin-top: 78px;
+    padding: 0 1em;
+    box-sizing: border-box;
+
+    h1, h3 {
+        line-height: 1em;
+    }
+
+    .btn {
+        width: 80%;
+        text-align: center;
+
+        &::before {
+            content:'Add to Cart';
+        }
+
+        &::after {
+            content: '';
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        max-width: 1000px;
+        margin: auto;
+        margin-top: 76px;
+    }
+}
+
+.customizeH2 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.customizeLine {
+    height: 3px;
+    background-color: $clr-secondary;
+    width: 100%;
+}
+
+.custom-head {
+    color: $clr-secondary;
+    font-size: 1.3em;
+    font-weight: 600;
+    display: block;
+    padding: .25em 0;
+}
+
+.custom-group {
+    font-size: 1.3em;
+    color: white;
+    font-weight: 600;
+    display: block;
+    padding: .5em 0 .5em .5em;
+}
+
+.custom-group-inline {
+    font-size: 1.3em;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    padding: .5em 0 .5em .5em;
+    width: 60%;
+}
+
+.subtotal {
+    font-size: 1.3em;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    padding: .5em 0 .5em .5em;
+    text-align: right;
+    float: right;
+    width: 30%;
+}
+
+.custom-product {
+    display: inline-block;
+    color: white;
+    padding-left: 1em;
+    width: 65%;
+    line-height: 2em;
+
+    @media screen and (max-width: 320px) {
+        width: 60%;
+    }
+
+    .fas {
+        display: inline-block;
+        box-sizing: border-box;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+        margin-right: .2em;
+        border-radius: 50%;
+        border: 2px solid $clr-white;
+        background: $clr-secondary;
+        color: $clr-white;
+        transform: scale(.8)
+    }
+    
+    .fa-info {
+        font-size: 12px;
+    }
+
+    &:hover {
+
+        .fa-info {
+            background: rgb(126, 126, 126);
+            transition: 250ms ease-in-out;
+        }
+    }
+}
+
+.custom-price {
+    display: inline-block;
+    color: white;
+    width: 30%;
+    text-align: right;
+    float: right;
+    line-height: 2em;
+
+    .btn{
+        padding: .2em .5em;
+
+        &::before {
+            content:'';
+        }
+    }
+}
+
+/* Customize the label (the container) */
+.custom-radio {
+    display: inline-block;
+    position: relative;
+    padding-left: 1em;
+    margin-bottom: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .custom-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: .5em;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .custom-radio:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .custom-radio input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .custom-radio input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .custom-radio .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: white;
+  }
+
+.custom-qty {
+    width: 50px;
+    height: 35px;
+    font-size: 1.2em;
+    color: white;
+    background: #33333350;
+    border: 1px solid #575757;
+    display: inline-block;
+    text-align: right;
+    float: right;
+    margin-top: .25em;
+}
+
+@media screen and (min-width: 768px) {
+    .custom-head {
+        font-size: 1.8em;
+    }
+
+    .custom-group {
+        font-size: 1.6em;
+    }
+
+    .custom-group-inline {
+        font-size: 1.6em;
+    }
+    .custom-product {
+        font-size: 1.4em;
+        padding-left: 3em;
+    }
+
+    .custom-price {
+        padding-right: .5em;
+        font-size: 1.4em;
     }
 }
