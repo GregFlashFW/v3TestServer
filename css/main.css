@@ -113,16 +113,13 @@ header .headContainer .exit-btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#C6FFDD), color-stop(25%, #FBD786), to(#F7797D));
   background: linear-gradient(#C6FFDD 0%, #FBD786 25%, #F7797D 100%);
   width: 200px;
-  -webkit-box-flex: right;
-      -ms-flex: right;
-          flex: right;
   margin-left: 1em;
   padding: 1.2em .5em;
   border: 1px solid #F7797D;
   border-radius: 10px;
-  position: absolute;
-  left: calc( 50vw + 245px);
-  top: 200px;
+  position: fixed;
+  right: calc(50vw - 470px);
+  top: 95px;
   text-align: center;
 }
 
@@ -1030,8 +1027,9 @@ h3 {
 }
 
 .card {
-  background-color: #EBDFC8;
   border-radius: 10px;
+  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 .title {
@@ -1395,6 +1393,7 @@ h3 {
   color: #fffaff;
   text-decoration: none;
   font-weight: 600;
+  z-index: 2;
 }
 
 .proofPage {
@@ -1727,12 +1726,14 @@ footer .text-center {
 .photo-select {
   display: inline-block;
   width: calc(100vw - 2em);
-  background-color: #EBDFC8;
+  background: linear-gradient(120deg, #797979, #3d3d3d);
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1em;
   margin: 0 1em;
+  -webkit-box-shadow: 5px 10px 10px #242424;
+          box-shadow: 5px 10px 10px #242424;
 }
 
 @media screen and (min-width: 768px) {
@@ -1753,7 +1754,7 @@ footer .text-center {
 }
 
 .photo-select h3 {
-  color: black;
+  color: white;
   display: block;
   margin: .5em 0;
 }
@@ -1761,8 +1762,8 @@ footer .text-center {
 .photo-select .photoSelect {
   width: 60vw;
   height: calc(60vw / 5 * 7);
-  border: 5px solid #939393;
-  background-color: #d4d4d483;
+  border: 5px solid #ffffff;
+  background-color: #acacac;
   display: block;
   position: relative;
   padding: 0px;
@@ -1774,7 +1775,7 @@ footer .text-center {
 .photo-select .photoSelect::before {
   content: '+';
   font-size: 100pt;
-  color: #909090;
+  color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1788,12 +1789,6 @@ footer .text-center {
     height: auto;
     padding-top: 125%;
     margin: auto;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .photo-select .photoSelect {
-    height: calc(90ph);
   }
 }
 
@@ -1853,6 +1848,7 @@ footer .text-center {
   float: right;
   line-height: 2em;
   display: block;
+  text-align: right;
 }
 
 @media screen and (min-width: 768px) {
@@ -1869,6 +1865,7 @@ footer .text-center {
   color: white;
   font-size: 1.2em;
   padding-left: .5em;
+  padding-right: .2em;
   line-height: 2em;
   display: inline-block;
 }
@@ -1918,6 +1915,7 @@ footer .text-center {
 
 .custom-product {
   display: inline-block;
+  position: relative;
   color: white;
   padding-left: 1em;
   width: 65%;
@@ -1953,18 +1951,35 @@ footer .text-center {
   border: 2px solid #fffaff;
   background: #3292E1;
   color: #fffaff;
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
 }
 
 .custom-product .fa-info {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .custom-product:hover .fa-info {
   background: #7e7e7e;
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
+  position: relative;
+  display: inline-block;
+}
+
+.custom-product:hover::before {
+  background-color: rgba(228, 228, 228, 0.95);
+  color: black;
+  content: attr(tooltip);
+  line-height: 1.4em;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: absolute;
+  z-index: 10;
+  padding: 1em;
+  bottom: 30px;
+  left: 30px;
+  width: 300px;
 }
 
 .custom-price {
@@ -2060,7 +2075,6 @@ footer .text-center {
   float: right;
   margin-top: .25em;
   margin-left: .5em;
-  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {

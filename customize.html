@@ -4,22 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Step 2: Select Poses - Flash Photography</title>
+    <title>Step 2: Customize Your Package - Flash Photography</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
-    <script type='text/javascript'>    
-    var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1kr6uzRIjehvVBpda2S9_Qpj_aj3lEuTVuRK5ceHat7M/edit?usp=sharing';
-
-    function init() {
-        Tabletop.init( { key: publicSpreadsheetUrl,
-                        callback: showInfo,
-                        simpleSheet: true } )
-    }
-
-    window.addEventListener('DOMContentLoaded', init)
-    </script>
-
 
 </head>
 <body>
@@ -85,16 +73,16 @@
 
             <span class="custom-group">Paper Style</span>
 
-            <span class="custom-product"><div class="fas fa-info"></div>Premium Pearlized Paper</span>
+            <span class="custom-product" tooltip="Our Premium Pearlized Paper has a glossy finish and a luminous appearance that creates images with exceptional visual depth.  Pearlized Paper offers a notable enhancement over our standard paper and also resists tearing."><div class="fas fa-info"></div>Premium Pearlized Paper</span>
             <div class="custom-price">
-                 + $68.70
+                    + $68.70
                 <label class="custom-radio">
                     <input type="radio" name="paper" checked="checked">
                     <span class="checkmark"></span>
                 </label>
             </div>
 
-            <span class="custom-product"><div class="fas fa-info"></div>Add Lamination</span>
+            <span class="custom-product" tooltip="Preserve your precious photos for a lifetime.  Lamination film adds a glossy finish to protect your photos and resists grease, finger prints, and tears."><div class="fas fa-info"></div>Add Lamination</span>
             <div class="custom-price">
                 + $20.00
                 <label class="custom-radio">
@@ -103,7 +91,7 @@
                 </label>
             </div>
 
-            <span class="custom-product"><div class="fas fa-info"></div>Standard Matte Finish</span>
+            <span class="custom-product"><div class="fas fa-info" style="opacity: 0;"></div>Standard Matte Finish</span>
             <div class="custom-price">
                 
                 <label class="custom-radio">
