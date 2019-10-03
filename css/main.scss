@@ -391,14 +391,14 @@ h3 {
         }
 
         .packageInfo {
-            background: linear-gradient(95deg,#BC4E9C10, #F8075910);
+            background: linear-gradient(95deg,#BC4E9C30, #F8075930);
 
         }
 
         .Description1 {
 
             img{
-                width: 90%;
+                width: 100%;
             }
         }
 
@@ -982,6 +982,44 @@ h3 {
             }
         }
     }
+
+
+    .collage {
+        text-align: center;
+        margin-bottom: 1em;
+
+        .title {
+            background: linear-gradient(90deg, #128cfd, #70b8fc);
+        }
+
+        @media screen and (min-width: 1024px) {
+            .Description2H {
+                box-sizing: border-box;
+                width: 50%;
+                float: left;
+                border-right: 1px solid white;
+            }
+        }
+    }
+
+    .inspiration {
+        text-align: center;
+
+        .title {
+            background: linear-gradient(90deg, #128cfd, #70b8fc);
+        }
+
+        @media screen and (min-width: 1024px) {
+            .Description2H {
+                box-sizing: border-box;
+                width: 25%;
+                float: left;
+                border-right: 1px solid white;
+            }
+        }
+    }
+
+
 }
 
 
@@ -993,11 +1031,11 @@ h3 {
 .title {
     background: linear-gradient(90deg, #E65C00, rgb(247, 132, 26));
     border-radius: 10px 10px 0 0;
-    font-size: 1.2em;
+    font-size: 1.6em;
     font-weight: 800;
     color: $clr-white;
     text-transform: uppercase;
-    padding: .3em 0;
+    padding: .1em 0;
     text-align: center;
     
 
@@ -1019,6 +1057,7 @@ h3 {
         left: 0;
         text-align: center;
         color:$clr-black;
+        line-height: 1.8em;
         background:rgba(241, 233, 218, 0.9);
         font-weight: 600;
         opacity: 0;
@@ -1042,7 +1081,7 @@ h3 {
         }
 
         .liLine {
-            width: 50px;
+            width: 75px;
             height: 1px;
             background-color: $clr-main;
             margin: 3px auto;
@@ -1154,6 +1193,7 @@ h3 {
         left: 0;
         text-align: center;
         color:$clr-black;
+        line-height: 1.6em;
         background:rgba(241, 233, 218, 0.9);
         font-weight: 600;
         opacity: 0;
@@ -1182,7 +1222,7 @@ h3 {
         }
 
         .liLine {
-            width: 50px;
+            width: 75px;
             height: 1px;
             background-color: $clr-main;
             margin: 3px auto;
@@ -1570,7 +1610,6 @@ footer {
         li {
             float: center;
             
-
             a{
                 color: rgba(255,255,255,0.9);
                 font-size: .8em;
@@ -1646,7 +1685,7 @@ footer {
     box-sizing: border-box;
     padding: 1em;
     margin: 0 1em;
-    box-shadow: 5px 10px 10px rgb(36, 36, 36);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.1);
 
     @media screen and (min-width: 768px) {
         width: calc(35% - 2em);
@@ -1773,6 +1812,7 @@ footer {
     line-height: 2em;
     display: inline-block;
 }
+
 .customizeLine {
     height: 3px;
     background-color: $clr-secondary;
@@ -1897,7 +1937,7 @@ footer {
   }
   
   /* Hide the browser's default radio button */
-  .custom-radio input {
+.custom-radio input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -1906,7 +1946,7 @@ footer {
   }
   
   /* Create a custom radio button */
-  .checkmark {
+.checkmark {
     position: absolute;
     top: 0;
     left: .5em;
@@ -1917,29 +1957,29 @@ footer {
   }
   
   /* On mouse-over, add a grey background color */
-  .custom-radio:hover input ~ .checkmark {
+.custom-radio:hover input ~ .checkmark {
     background-color: #ccc;
   }
   
   /* When the radio button is checked, add a blue background */
-  .custom-radio input:checked ~ .checkmark {
+.custom-radio input:checked ~ .checkmark {
     background-color: #2196F3;
   }
   
   /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
+.checkmark:after {
     content: "";
     position: absolute;
     display: none;
   }
   
   /* Show the indicator (dot/circle) when checked */
-  .custom-radio input:checked ~ .checkmark:after {
+.custom-radio input:checked ~ .checkmark:after {
     display: block;
   }
   
   /* Style the indicator (dot/circle) */
-  .custom-radio .checkmark:after {
+.custom-radio .checkmark:after {
     top: 4px;
     left: 4px;
     width: 12px;
