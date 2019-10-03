@@ -648,13 +648,23 @@ h3 {
   border-radius: 10px;
 }
 
+.products .packageWall2 .card {
+  background-image: url("images/deskBG.jpg") !important;
+  background-repeat: no-repeat;
+}
+
 .products .packageWall2 .title {
   background: -webkit-gradient(linear, left top, right top, from(#FFA751), to(#FFE259));
   background: linear-gradient(90deg, #FFA751, #FFE259);
 }
 
+.products .packageWall2 .Description1 {
+  padding: 0;
+}
+
 .products .packageWall2 .Description1 img {
-  width: 100%;
+  overflow: hidden;
+  height: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1042,7 +1052,7 @@ h3 {
             box-sizing: border-box;
     width: 50%;
     float: left;
-    border-right: 1px solid white;
+    border-right: 1px solid #96865b;
   }
 }
 
@@ -1061,7 +1071,7 @@ h3 {
             box-sizing: border-box;
     width: 25%;
     float: left;
-    border-right: 1px solid white;
+    border-right: 1px solid #96865b;
   }
 }
 
@@ -1105,7 +1115,7 @@ h3 {
   text-align: center;
   color: #050401;
   line-height: 1.8em;
-  background: rgba(241, 233, 218, 0.9);
+  background: rgba(241, 233, 218, 0.95);
   font-weight: 600;
   opacity: 0;
   -webkit-transition: ease-out .3s;
@@ -1128,6 +1138,11 @@ h3 {
   color: #050401;
   text-align: center;
   border-bottom: 3px solid #e38125;
+}
+
+.title2 .d1Overlay p {
+  text-align: left;
+  padding: 1em;
 }
 
 .title2 .d1Overlay .liLine {
@@ -1245,7 +1260,7 @@ h3 {
   text-align: center;
   color: #050401;
   line-height: 1.6em;
-  background: rgba(241, 233, 218, 0.9);
+  background: rgba(241, 233, 218, 0.95);
   font-weight: 600;
   opacity: 0;
   -webkit-transition: ease-out .3s;
