@@ -618,8 +618,12 @@ h3 {
   background: linear-gradient(90deg, #E65C00, #F9D423);
 }
 
+.products .packageWall .Description1 {
+  padding: 0;
+}
+
 .products .packageWall .Description1 img {
-  width: 90%;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
