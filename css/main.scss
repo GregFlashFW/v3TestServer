@@ -602,6 +602,7 @@ h3 {
                 z-index: 0;
                 opacity: 0.4;
                 background-image: url("/v3TestServer/images/deskBG.jpg");
+                background-image: url("/images/deskBG.jpg");
                 background-repeat: repeat;
                 background-position: 50% 0;
             }
@@ -639,12 +640,6 @@ h3 {
         background: #EBDFC8;
         border-radius: 10px;
 
-        .card {
-            background-image: url("images/deskBG.jpg")!important;
-            background-repeat: no-repeat;
-
-        }
-
         .packageInfo {
             position: relative;
             background: none;
@@ -661,6 +656,7 @@ h3 {
                 z-index: 0;
                 opacity: 0.4;
                 background-image: url("/v3TestServer/images/deskBG.jpg");
+                background-image: url("/images/deskBG.jpg");
                 background-repeat: repeat;
                 background-position: 50% 0;
             }
