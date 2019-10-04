@@ -586,6 +586,29 @@ h3 {
             background: linear-gradient(90deg, #E65C00, #F9D423);
         }
 
+        .packageInfo {
+            position: relative;
+            background: none;
+
+            &::before {
+                content:'';
+                box-sizing: border-box;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                opacity: 0.4;
+                background-image: url("/v3TestServer/images/deskBG.jpg");
+                background-image: url("/images/deskBG.jpg");
+                background-repeat: repeat;
+                background-position: 50% 0;
+                background-size: cover;
+            }
+        }
+
         .Description1 {
             img {
                 width: 90%;
@@ -626,6 +649,29 @@ h3 {
             background: linear-gradient(90deg, #FFA751, #FFE259);
         }
 
+        .packageInfo {
+            position: relative;
+            background: none;
+
+            &::before {
+                content:'';
+                box-sizing: border-box;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                opacity: 0.4;
+                background-image: url("/v3TestServer/images/deskBG.jpg");
+                background-image: url("/images/deskBG.jpg");
+                background-repeat: repeat;
+                background-position: 50% 0;
+                background-size: cover;
+            }
+        }
+        
         .Description1 {
             padding: 0;
 
