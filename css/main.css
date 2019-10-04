@@ -415,7 +415,8 @@ h3 {
 }
 
 .products .Digital .packageInfo {
-  background: linear-gradient(95deg, #BC4E9C30, #F8075930);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(251, 216, 134, 0.808)), to(rgba(247, 121, 125, 0.692)));
+  background: linear-gradient(180deg, rgba(251, 216, 134, 0.808), rgba(247, 121, 125, 0.692));
 }
 
 .products .Digital .Description1 img {
@@ -638,6 +639,7 @@ h3 {
   background-image: url("/images/deskBG.jpg");
   background-repeat: repeat;
   background-position: 50% 0;
+  background-size: cover;
 }
 
 .products .packageWall .Description1 {
@@ -696,6 +698,7 @@ h3 {
   background-image: url("/images/deskBG.jpg");
   background-repeat: repeat;
   background-position: 50% 0;
+  background-size: cover;
 }
 
 .products .packageWall2 .title {
@@ -1123,8 +1126,8 @@ h3 {
 
 .card {
   border-radius: 10px;
-  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
-          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.25);
 }
 
 .title {
