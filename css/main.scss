@@ -586,6 +586,27 @@ h3 {
             background: linear-gradient(90deg, #E65C00, #F9D423);
         }
 
+        .packageInfo {
+            position: relative;
+            background: none;
+
+            &::before {
+                content:'';
+                box-sizing: border-box;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                opacity: 0.4;
+                background-image: url("/images/deskBG.jpg");
+                background-repeat: repeat;
+                background-position: 50% 0;
+            }
+        }
+
         .Description1 {
             padding: 0;
 
@@ -624,12 +645,34 @@ h3 {
 
         }
 
+        .packageInfo {
+            position: relative;
+            background: none;
+
+            &::before {
+                content:'';
+                box-sizing: border-box;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                opacity: 0.4;
+                background-image: url("/images/deskBG.jpg");
+                background-repeat: repeat;
+                background-position: 50% 0;
+            }
+        }
+
         .title {
             background: linear-gradient(90deg, #FFA751, #FFE259);
         }
 
         .Description1 {
             padding: 0;
+            background: none;
 
 
             img {
