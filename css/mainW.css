@@ -1566,13 +1566,15 @@ h3 {
 .AllProofs .proofs {
   position: relative;
   margin: 1em auto;
-  padding: .5em;
+  padding: 1em;
   text-align: center;
   background-color: #fffaff;
   border-radius: 5px;
   overflow: hidden;
   -webkit-transition: 250ms ease-in-out;
   transition: 250ms ease-in-out;
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .AllProofs .proofs img {
@@ -1728,6 +1730,7 @@ footer {
   padding: 10px 0 20px 0;
   width: 100%;
   display: block;
+  position: relative;
 }
 
 footer .justify-content-center {
@@ -2209,10 +2212,10 @@ footer .text-center {
   border-radius: 10px;
   position: relative;
   text-align: center;
-  height: 250px;
-  overflow: hidden;
   -webkit-box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  overflow: hidden;
 }
 
 .advertisements .Ad1 h1, .advertisements .Ad2 h1, .advertisements .Ad3 h1 {

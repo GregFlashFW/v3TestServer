@@ -1497,12 +1497,13 @@ h3 {
     .proofs {
         position: relative;
         margin: 1em auto;
-        padding: .5em;
+        padding: 1em;
         text-align: center;
         background-color: $clr-white;
         border-radius: 5px;
         overflow: hidden;
         transition: 250ms ease-in-out;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
 
         img {
             transition: opacity ease-in-out 250ms;
@@ -1643,6 +1644,7 @@ footer {
     padding: 10px 0 20px 0;
     width: 100%;
     display: block;
+    position: relative;
 
     .justify-content-center {
         justify-content: center !important;
@@ -2107,9 +2109,9 @@ footer {
         border-radius: 10px;
         position: relative;
         text-align: center;
-        height: 250px;
-        overflow: hidden;
         box-shadow: 5px 10px 10px rgba(0,0,0,0.2);
+        padding: 0;
+        overflow: hidden;
 
         h1 {
             color: black;
@@ -2121,6 +2123,8 @@ footer {
             display: block;
             text-align: center;
         }
+
+
 
         p {
             text-align: left;
