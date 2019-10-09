@@ -1156,11 +1156,54 @@ h3 {
 .products .collage {
   text-align: center;
   margin-bottom: 1em;
+  position: relative;
 }
 
 .products .collage .title {
   background: -webkit-gradient(linear, left top, right top, from(#128cfd), to(#70b8fc));
   background: linear-gradient(90deg, #128cfd, #70b8fc);
+}
+
+.products .collage .title2 {
+  background: none !important;
+}
+
+.products .collage .packageInfo {
+  position: relative;
+  background: none;
+}
+
+.products .collage .packageInfo::before {
+  content: '';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .8;
+  background-image: url("../images/blueBG.jpg");
+  background-repeat: repeat;
+  background-position: 50% 75%;
+  background-size: cover;
+}
+
+.products .collage .Description1, .products .collage .Description2H {
+  z-index: 10;
+  background: none;
+  text-align: center;
+}
+
+.products .collage .Description1 p, .products .collage .Description2H p {
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  width: 90%;
+  margin: auto;
+  padding: .2em;
 }
 
 @media screen and (min-width: 1024px) {
@@ -1180,6 +1223,56 @@ h3 {
 .products .inspiration .title {
   background: -webkit-gradient(linear, left top, right top, from(#128cfd), to(#70b8fc));
   background: linear-gradient(90deg, #128cfd, #70b8fc);
+}
+
+.products .inspiration .title2 {
+  background: none !important;
+}
+
+.products .inspiration .packageInfo {
+  position: relative;
+  background: none;
+}
+
+.products .inspiration .packageInfo::before {
+  content: '';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 1;
+  background-image: url("../images/brickBG.jpg");
+  background-repeat: repeat;
+  background-position: 50% 75%;
+  background-size: cover;
+}
+
+.products .inspiration .Description1, .products .inspiration .Description2H {
+  z-index: 10;
+  background: none;
+  text-align: center;
+}
+
+.products .inspiration .Description1 p, .products .inspiration .Description2H p {
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  width: 90%;
+  margin: auto;
+  padding: .2em;
+}
+
+.products .inspiration .Description1 {
+  background-color: none !important;
+}
+
+.products .inspiration .Description2 {
+  background-color: none !important;
 }
 
 @media screen and (min-width: 1024px) {
