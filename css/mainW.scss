@@ -748,13 +748,18 @@ h3 {
         }
 
         .Description2 {
+
+            h2 {
+                font-size: 1.6em;
+                padding: 0 0 0 1em;
+            }
             
             p {
                 box-sizing: border-box;
                 background-color: rgba(255,255,255,0.9);
                 border-radius: 5px;
                 color: black;
-                margin: 1em;
+                margin: 0 1em;
                 padding: 1em;
                 text-align: left;
                 line-height: 1.6em;
@@ -772,11 +777,11 @@ h3 {
                 justify-content: space-between;
 
                 .Description1 {
-                    width: 64%;
+                    width: 50%;
                 }
 
                 .Description2 {
-                    width: 36%;
+                    width: 50%;
                     align-content: center;
                     margin: auto;
                 }
