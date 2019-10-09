@@ -1333,7 +1333,7 @@ h3 {
   border-radius: 5px;
   width: 90%;
   margin: auto;
-  padding: .2em;
+  padding: .2em 0;
   text-transform: uppercase;
 }
 
@@ -1358,7 +1358,10 @@ h3 {
             box-sizing: border-box;
     width: 25%;
     float: left;
-    border-right: 1px solid #96865b;
+    border-right: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  .products .inspiration .Description2H:last-child {
+    border-right: none;
   }
 }
 
