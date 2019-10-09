@@ -811,16 +811,53 @@ h3 {
 }
 
 .products .posters {
-  width: 100%;
-  margin: 2em 0;
-  background: #EBDFC8;
-  border-radius: 10px;
   text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.products .posters .hide-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .products .posters .hide-mobile {
+    display: inline-block;
+  }
+}
+
+.products .posters .titleImage .hide-desktop7 {
+  display: inline-block;
+}
+
+@media screen and (min-width: 768) {
+  .products .posters .titleImage .hide-desktop7 {
+    display: none;
+  }
 }
 
 .products .posters .title {
   background: -webkit-gradient(linear, left top, right top, from(#FFA751), to(#FFE259));
   background: linear-gradient(90deg, #FFA751, #FFE259);
+}
+
+.products .posters .title2 {
+  background: none !important;
+}
+
+.products .posters .title2 .hide-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .products .posters .title2 .hide-mobile {
+    display: inline-block;
+  }
+}
+
+.products .posters .title2 .hide-desktop7 {
+  display: inline-block;
 }
 
 @media screen and (min-width: 768px) {
@@ -829,27 +866,51 @@ h3 {
   }
 }
 
-.products .posters .Description1 img {
-  width: 100%;
+.products .posters .packageInfo {
+  position: relative;
+  background: none;
 }
 
-@media screen and (min-width: 768px) {
-  .products .posters .packageInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .products .posters .packageInfo .Description1 {
-    width: 64%;
-  }
-  .products .posters .packageInfo .Description2 {
-    width: 36%;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    margin: auto;
+.products .posters .packageInfo::before {
+  content: '';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: .8;
+  background-image: url("../images/whiteWoodBG.jpg");
+  background-repeat: repeat;
+  background-position: 50% 75%;
+  background-size: cover;
+}
+
+.products .posters .Description1, .products .posters .Description2H {
+  z-index: 10;
+  background: none;
+  text-align: center;
+}
+
+.products .posters .Description1 p, .products .posters .Description2H p {
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  width: 90%;
+  margin: auto;
+  padding: .2em;
+}
+
+@media screen and (min-width: 1024px) {
+  .products .posters .Description2H {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: calc(100% / 3);
+    float: left;
+    border-right: 1px solid #96865b;
   }
 }
 
