@@ -775,6 +775,7 @@ h3 {
 
 .products .tasselFrame .Description1 {
   padding: 1em;
+  width: 55% !important;
 }
 
 .products .tasselFrame .Description1 img {
@@ -782,6 +783,21 @@ h3 {
   height: 100%;
   max-height: 300px;
   width: auto;
+}
+
+.products .tasselFrame .Description2 {
+  width: 45% !important;
+}
+
+.products .tasselFrame .Description2 p {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  color: black;
+  margin: 1em;
+  padding: 1em 1em 2em 1em;
+  text-align: left;
+  line-height: 1.6em;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {

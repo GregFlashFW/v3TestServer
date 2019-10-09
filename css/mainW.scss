@@ -698,6 +698,7 @@ h3 {
             margin-top: 1em;
         }
     }
+
     .tasselFrame {
         width: 100%;
         margin: 2em 0 1em 0;
@@ -732,6 +733,7 @@ h3 {
 
         .Description1 {
             padding: 1em;
+            width: 55% !important;
 
 
             img {
@@ -739,6 +741,21 @@ h3 {
                 height: 100%;
                 max-height: 300px;
                 width: auto;
+            }
+        }
+
+        .Description2 {
+            width: 45% !important;
+            
+            p {
+                background-color: rgba(255,255,255,0.9);
+                border-radius: 5px;
+                color: black;
+                margin: 1em;
+                padding: 1em 1em 2em 1em;
+                text-align: left;
+                line-height: 1.6em;
+                font-weight: 600;
             }
         }
 
