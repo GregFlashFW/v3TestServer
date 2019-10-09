@@ -775,7 +775,6 @@ h3 {
 
 .products .tasselFrame .Description1 {
   padding: 1em;
-  width: 55% !important;
 }
 
 .products .tasselFrame .Description1 img {
@@ -785,19 +784,29 @@ h3 {
   width: auto;
 }
 
-.products .tasselFrame .Description2 {
-  width: 45% !important;
+@media screen and (min-width: 768px) {
+  .products .tasselFrame .Description1 {
+    width: 55%;
+  }
 }
 
 .products .tasselFrame .Description2 p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   color: black;
   margin: 1em;
-  padding: 1em 1em 2em 1em;
+  padding: 1em;
   text-align: left;
   line-height: 1.6em;
   font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .products .tasselFrame .Description2 {
+    width: 45%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -946,6 +955,10 @@ h3 {
   background: linear-gradient(90deg, #FFA751, #FFE259);
 }
 
+.products .individuals .Description1 {
+  padding: .5em !important;
+}
+
 .products .individuals .Description1 img {
   width: 100%;
 }
@@ -996,10 +1009,16 @@ h3 {
 .products .individuals .Description1 table {
   width: 100%;
   border-spacing: 0;
-  margin: 0 auto .5em;
+  margin: auto;
   padding: 0;
   border-radius: 5px;
   overflow: hidden;
+  font-size: 1.3em;
+}
+
+.products .individuals .Description1 table th {
+  line-height: 1em !important;
+  font-size: .8em !important;
 }
 
 .products .individuals .Description1 table tr {
@@ -1102,49 +1121,6 @@ h3 {
   width: 100%;
 }
 
-.products .plaques1 .Description1 .titleInfo8x10, .products .plaques2 .Description1 .titleInfo8x10 {
-  width: 225px;
-  background: #fffaff;
-  height: 50px;
-  margin-left: 1em;
-  position: relative;
-  line-height: 6px;
-  font-weight: bold;
-  float: left;
-}
-
-.products .plaques1 .Description1 .titleInfo8x10::before, .products .plaques2 .Description1 .titleInfo8x10::before {
-  position: absolute;
-  width: 205px;
-  height: 20px;
-  left: 10px;
-  top: 0px;
-  background: #050401;
-  content: '';
-}
-
-.products .plaques1 .Description1 .titleInfo8x10::after, .products .plaques2 .Description1 .titleInfo8x10::after {
-  content: 'The University of Sample \A Commencement \A Date of Event';
-  position: absolute;
-  font-size: .2em;
-  font-weight: bold;
-  white-space: pre;
-  padding: 0;
-  margin: 0;
-  top: 68%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.products .plaques1 .Description1 .sampleTitleText, .products .plaques2 .Description1 .sampleTitleText {
-  width: 75px;
-  float: right;
-  font-size: .8em;
-  padding-right: 2em;
-  font-weight: 600;
-}
-
 .products .plaques1 .Description1 table, .products .plaques2 .Description1 table {
   width: 100%;
   border-spacing: 0;
@@ -1232,6 +1208,8 @@ h3 {
 
 .products .collage {
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-bottom: 1em;
   position: relative;
 }
@@ -1269,12 +1247,20 @@ h3 {
 }
 
 .products .collage .Description1, .products .collage .Description2H {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 10;
   background: none;
   text-align: center;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 .products .collage .Description1 p, .products .collage .Description2H p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
@@ -1319,8 +1305,8 @@ h3 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 200%;
+  height: 200%;
   z-index: -1;
   opacity: 1;
   background-image: url("../images/brickBG.jpg");
@@ -1330,18 +1316,25 @@ h3 {
 }
 
 .products .inspiration .Description1, .products .inspiration .Description2H {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   z-index: 10;
   background: none;
   text-align: center;
+  padding: .5em 0 !important;
+  margin: 0 !important;
 }
 
 .products .inspiration .Description1 p, .products .inspiration .Description2H p {
   display: block;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
   width: 90%;
   margin: auto;
   padding: .2em;
+  text-transform: uppercase;
 }
 
 .products .inspiration .Description1 {
@@ -1350,6 +1343,13 @@ h3 {
 
 .products .inspiration .Description2 {
   background-color: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .products .inspiration .Description2H {
+    width: 25%;
+    float: left;
+  }
 }
 
 @media screen and (min-width: 1024px) {

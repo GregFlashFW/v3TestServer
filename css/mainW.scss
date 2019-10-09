@@ -733,7 +733,6 @@ h3 {
 
         .Description1 {
             padding: 1em;
-            width: 55% !important;
 
 
             img {
@@ -742,20 +741,27 @@ h3 {
                 max-height: 300px;
                 width: auto;
             }
+
+            @media screen and (min-width: 768px) {
+                width: 55%;
+            }
         }
 
         .Description2 {
-            width: 45% !important;
             
             p {
+                box-sizing: border-box;
                 background-color: rgba(255,255,255,0.9);
                 border-radius: 5px;
                 color: black;
                 margin: 1em;
-                padding: 1em 1em 2em 1em;
+                padding: 1em;
                 text-align: left;
                 line-height: 1.6em;
                 font-weight: 600;
+            }
+            @media screen and (min-width: 768px){
+                width: 45%;            
             }
         }
 
@@ -890,6 +896,8 @@ h3 {
         }
 
         .Description1 {
+            padding: .5em !important;
+
             img {
                 width: 100%;
             }
@@ -939,10 +947,16 @@ h3 {
             table {
                 width: 100%;
                 border-spacing: 0;
-                margin: 0 auto .5em;
+                margin: auto;
                 padding: 0;
                 border-radius: 5px;
                 overflow: hidden;
+                font-size: 1.3em;
+
+                th {
+                    line-height: 1em !important;
+                    font-size: .8em !important;
+                }
 
                 tr {
                     background: rgba(255,255,255,0.3);
@@ -1042,48 +1056,6 @@ h3 {
                 width: 100%;
             }
 
-            .titleInfo8x10 {
-                width: 225px;
-                background: $clr-white;
-                height: 50px;
-                margin-left: 1em;
-                position: relative;
-                line-height: 6px;
-                font-weight: bold;
-                float: left;
-
-                &::before {
-                    position: absolute;
-                    width: 205px;
-                    height: 20px;
-                    left: 10px;
-                    top: 0px;
-                    background:$clr-black;
-                    content: '';
-                }
-
-                &::after {
-                    content: 'The University of Sample \A Commencement \A Date of Event';
-                    position: absolute;
-                    font-size: .2em;
-                    font-weight: bold;
-                    white-space: pre;
-                    padding: 0;
-                    margin: 0;
-                    top: 68%;
-                    left: 50%;
-                    transform: translate(-50%, -50%)
-                }
-            }
-
-            .sampleTitleText {
-                width: 75px;
-                float: right;
-                font-size: .8em;
-                padding-right: 2em;
-                font-weight: 600;
-            }
-
             table {
                 width: 100%;
                 border-spacing: 0;
@@ -1170,6 +1142,7 @@ h3 {
 
     .collage {
         text-align: center;
+        box-sizing: border-box;
         margin-bottom: 1em;
         position: relative;    
 
@@ -1205,11 +1178,17 @@ h3 {
         
 
         .Description1, .Description2H {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
             z-index: 10;
             background: none;
             text-align: center;
+            padding: 0 !important;
+            margin: 0 !important;
 
             p {
+                box-sizing: border-box;
                 display: block;
                 background: rgba(255,255,255,0.7);
                 border-radius: 5px;
@@ -1252,8 +1231,8 @@ h3 {
                 position: absolute;
                 left: 0;
                 top: 0;
-                width: 100%;
-                height: 100%;
+                width: 200%;
+                height: 200%;
                 z-index: -1;
                 opacity: 1;
                 background-image: url("../images/brickBG.jpg");
@@ -1264,17 +1243,23 @@ h3 {
         }
 
         .Description1, .Description2H {
+            position: relative;
+            display: block;
+            box-sizing: border-box;
             z-index: 10;
             background: none;
             text-align: center;
+            padding: .5em 0 !important;
+            margin: 0 !important;
 
             p {
                 display: block;
-                background: rgba(255,255,255,0.7);
+                background: rgba(255, 255, 255, 0.9);
                 border-radius: 5px;
                 width: 90%;
                 margin: auto;
                 padding: .2em;
+                text-transform: uppercase;
             }
         }
 
@@ -1286,6 +1271,13 @@ h3 {
             background-color: none !important;
         }
 
+
+        @media screen and (min-width: 768px) {
+            .Description2H {
+                width: 25%;
+                float: left;
+            }
+        }
         @media screen and (min-width: 1024px) {
             .Description2H {
                 box-sizing: border-box;
