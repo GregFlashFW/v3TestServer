@@ -1117,6 +1117,30 @@ h3 {
   border-radius: 10px;
 }
 
+.products .plaques1 .packageInfo, .products .plaques2 .packageInfo {
+  position: relative;
+  background: none;
+  min-height: 365px;
+}
+
+.products .plaques1 .packageInfo::before, .products .plaques2 .packageInfo::before {
+  content: '';
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 1;
+  background-image: url("../images/wall2.jpg");
+  background-repeat: repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
 .products .plaques1 .title, .products .plaques2 .title {
   background: -webkit-gradient(linear, left top, right top, from(#11998E), to(#38EF7D));
   background: linear-gradient(90deg, #11998E, #38EF7D);

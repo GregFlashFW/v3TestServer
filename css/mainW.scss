@@ -6,6 +6,7 @@ $clr-white: #fffaff;
 $clr-black: #050401;
 $tbg-digital: linear-gradient(90deg, #BC4E9C, #F80759);
 $tbg-monster: linear-gradient(90deg, #CB2D3E, #EF473A);
+$tbg-individual: linear-gradient(90deg, #FFA751, #FFE259);
 $cardbg: #EBDFC8;
 
 *::before, *::after { box-sizing: border-box;}
@@ -1050,6 +1051,29 @@ h3 {
             margin: 1em 0;
             background: #EBDFC8;
             border-radius: 10px;
+        }
+
+        .packageInfo {
+            position: relative;
+            background: none;
+            min-height: 365px;
+
+            &::before {
+                content:'';
+                box-sizing: border-box;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+                opacity: 1;
+                background-image: url("../images/wall2.jpg");
+                background-repeat: repeat;
+                background-position: 50% 0;
+                background-size: cover;
+            }
         }
 
         .title {
