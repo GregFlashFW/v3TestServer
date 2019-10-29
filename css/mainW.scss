@@ -23,7 +23,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 9999;
+    box-shadow: 0 .25em .65em rgba(0,0,0,0.15);
 
     .headContainer {
         background-color: $clr-main;
@@ -123,6 +124,7 @@ header {
     right: calc(50vw - 470px);
     top: 95px;
     text-align: center;
+    box-shadow: .5em .5em .65em rgba(0,0,0,0.15);
 
     h1 {
         color: #F77A7D;
@@ -1327,7 +1329,7 @@ h3 {
 
 .card {
     border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.15);
+    box-shadow: .5em .5em .65em rgba(0,0,0,0.15);
 }
 
 .title {
